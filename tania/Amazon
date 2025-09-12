@@ -1,0 +1,8 @@
+import { test, expect } from '@playwright/test'
+
+test('Etsy search test', async ({ page }) => {
+    await page.goto("https://www.facebook.com/")
+    let connectMessage = page.locator('h2[_8eso]')
+    let expectedResultText = "Connect with friends and the world around you on Facebook."
+    expect(await connectMessage.innerText()).toBe(expectedResultText)
+})
