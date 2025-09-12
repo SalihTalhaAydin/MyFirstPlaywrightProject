@@ -1,6 +1,6 @@
 
 import { test, expect } from '@playwright/test'
-test('Eatsy test page', async({ page })) => {
+test('Eatsy test page', async({ page }) => {
 
     await page.goto('https://www.etsy.com/')
     await page.waitForTimeout(5_000)
@@ -9,10 +9,4 @@ test('Eatsy test page', async({ page })) => {
     await page.waitForTimeout(5_000)
     await searchBar.press('Enter')
     await page.waitForTimeout(5_000)
-
-
-
-
-
-
-}
+})
