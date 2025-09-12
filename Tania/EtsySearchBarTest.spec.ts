@@ -14,8 +14,8 @@ test('Etsy search test', async ({ page }) => {
     // 5. validate the results
 
     await page.goto("https://www.etsy.com/featured/hub/halloween-costumes-and-decor-ideas?ref=hp_shoppable_hero_primary")
-    await page.locator("wt-input wt-input-btn-group__input global-enhancements-search-input-btn-group__input wt-pr-xs-7 ")
-    let searchBar = page.locator("wt-input wt-input-btn-group__input global-enhancements-search-input-btn-group__input wt-pr-xs-7 ")
+    await page.locator("input [area-controls = 'global-enhancements-search-suggestions']")
+    let searchBar = page.locator("input [area-controls = 'global-enhancements-search-suggestions']")
     await searchBar.fill("t shirt")
     await searchBar.press("Enter")
     await page.waitForTimeout(5_000)
