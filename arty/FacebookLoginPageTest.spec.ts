@@ -4,7 +4,7 @@ test('Welcome text test', async ({ page }) => {
 
     await page.goto('https://www.facebook.com/')
     await page.waitForTimeout(5_000)
-    let expectedText = "Connect with friends and the world around you on Facebook.";
-    let actualText = page.locator('h2[class="_8eso"]')
+    let expectedText = "Create a Page for a celebrity, brand or business.";
+    let actualText = page.locator('div[id="reg_pages_msg"]')
     expect(await actualText.innerText()).toBe(expectedText);
 })
