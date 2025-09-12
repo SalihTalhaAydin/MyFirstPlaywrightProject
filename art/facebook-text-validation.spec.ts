@@ -14,8 +14,7 @@ test('Facebook text validation', async ({page}) => {
     // 3. validate the 'Create a Page for a celebrity, brand or business.'
     console.log('Validating Create a Page text')
     let expectedCreateText = 'Create a Page for a celebrity, brand or business.'
-    let actualCreateText = await page.locator('a[class="_8esh"]').innerText() 
-        + await page.locator('div[id="reg_pages_msg"]').innerText()
+    let actualCreateText = await page.locator('div[id="reg_pages_msg"]').innerText()
 
     expect(actualCreateText, expectedCreateText)
     // NOTE: validate should remind you 'expect method'
