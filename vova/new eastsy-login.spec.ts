@@ -1,4 +1,3 @@
-
 import { test, expect } from '@playwright/test'
 test('Eatsy test page', async ({ page }) => {
 
