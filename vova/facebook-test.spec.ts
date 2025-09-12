@@ -9,7 +9,7 @@ test('Eatsy test page', async ({ page }) => {
 
 
     let expectedResultTest2 = 'Создать Страницу знаменитости, музыкальной группы или компании.'
-    let expectingMesage2 = page.locator('div{id="reg_pages_msg"]')
+    let expectingMesage2 = page.locator('div[id="reg_pages_msg"]')
     expect(await expectedResultTest2.innerText()), toBe(expectingMesage2)
 
 })
