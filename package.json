@@ -19,5 +19,8 @@
   "homepage": "https://github.com/SalihTalhaAydin/MyFirstPlaywrightProject#readme",
   "devDependencies": {
     "@playwright/test": "^1.55.0"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
