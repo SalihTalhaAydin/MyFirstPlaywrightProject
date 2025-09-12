@@ -11,5 +11,5 @@ test("Facebook test", async ({ page }) => {
 
   let expectedTextResult2 = "Create a Page for a celebrity, brand or business.";
   let searchResulText2 = page.locator('div [id="reg_pages_msg"]');
-  expect(await searchResulText2 .innerText()).toBe(expectedTextResult2);
+  expect(await searchResulText2.innerText()).toBe(expectedTextResult2);
 });
